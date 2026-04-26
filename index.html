@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Іванюк Олександра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left-header">
+                <img src="photo.png" class="profile-photo" alt="Моє фото">
+            </div>
+
+            <div class="right-header">
+                <button id="themeToggle" class="theme-btn">Змінити тему</button>
+                <h1>Іванюк<br>Олександра</h1>
+                <p class="subtitle">Студентка спеціальності "Кібербезпека та захист інформації"</p>
+            </div>
+        </header>
+
+        <main>
+            <aside class="sidebar">
+                <section id="contacts">
+                    <h2>Контакти</h2>
+                    <ul>
+                        <li>Email: <a href="mailto:sashunkaivaniuk@gmail.com">sashunkaivaniuk@gmail.com</a></li>
+                        <li>Телефон: <a href="tel:+380637437501">+38 063 743 75 01</a></li>
+                        <li>Львів, Україна</li>
+                    </ul>
+                </section>
+
+                <section id="education">
+                    <h2>Освіта</h2>
+                    <p>Національний університет "Львівська Політехніка"</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Навички</h2>
+                    <ul>
+                        <li>HTML5 (responsive design)</li>
+                        <li>CSS3</li>
+                        <li>Basic JavaScript</li>
+                        <li>Python</li>
+                        <li>VS Code & Chrome DevTools</li>
+                    </ul>
+                </section>
+
+                <section id="additional">
+                    <h2>Додаткова інформація</h2>
+                    <ul>
+                        <li>Сертифікат Prometheus: "Безпека в інтернеті під час війни: практичний курс"</li>
+                        <li>Досвід навчання в онлайн-школі GoIT</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <section class="content">
+                <section id="about">
+                    <h2>Про мене</h2>
+                    <p><strong>Я</strong> навчаюся в Національному університеті «Львівська політехніка» на спеціальності <strong>Кібербезпека та захист інформації</strong>. Я <em>наполеглива</em> людина і завжди хочу навчатися новому. Маю спокійний характер, але водночас вмію відстоювати свою думку. Ціную чесність та підтримку у спілкуванні з людьми. Навчання дозволяє мені розвиватися та ставати кращою з кожним днем.</p>
+                </section>
+
+                <section id="projects">
+                    <h2>Досвід та проєкти</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Назва проєкту</th>
+                                <th>Опис та технології</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Сайт бази даних мережі супермаркетів</td>
+                                <td>Робота з базами даних (SQL/noSQL) та структура даних.</td>
+                            </tr>
+                            <tr>
+                                <td>Додаток "Guide"</td>
+                                <td>Дизайн для додатку</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+      <section id="comments-section">
+         <h2>Коментарі</h2>
+        <div id="comments"></div>
+     </section>
+        <footer id="footer">
+    <p>&copy; 2026 Іванюк Олександра. Всі права захищені.</p>
+       </footer>
+    </div>
+   <div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+        <h2>Зворотній зв’язок</h2>
+
+        <form action="https://formspree.io/f/mojkzvdn" method="POST">
+            <input type="text" name="name" placeholder="Ім'я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
